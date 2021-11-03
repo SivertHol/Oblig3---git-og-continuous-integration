@@ -29,4 +29,4 @@ jobs:
       run: mvn -B package --file pom.xml
       
     - name: TEST
-      run: LeapYear mvn verify
+      run: mvn verify
