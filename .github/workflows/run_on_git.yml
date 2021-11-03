@@ -25,6 +25,5 @@ jobs:
         architecture: x64
         cache: maven
     
-    - name: run tests
-      run: |
-        LeapYear.java -r w
+    - name: Build with Maven
+      run: mvn -B package --file pom.xml
