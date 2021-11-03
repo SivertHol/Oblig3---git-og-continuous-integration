@@ -24,3 +24,7 @@ jobs:
         distribution: 'adopt'
         architecture: x64
         cache: maven
+    
+    - name: run tests
+      run: |
+        LeapYear.java -r w
