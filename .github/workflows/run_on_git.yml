@@ -22,5 +22,5 @@ jobs:
       with:
         java-version: '11'
         distribution: 'adopt'
-        architecure: x64
+        architecture: x64
         cache: maven
