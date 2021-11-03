@@ -17,7 +17,7 @@ public class LeapYear {
 
     //Når det er delelig med 400.
     @ParameterizedTest
-    @ValueSource(ints = {400, 800, 1200, 2000, 2400})
+    @ValueSource(ints = {400, 800, 1200, 2000, 2402})
     public void years_dividable_by_400_are_leap_years(int year) {
         assertTrue(LeapYearCheck.isLeapYear(year));
     }
