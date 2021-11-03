@@ -5,8 +5,7 @@ name: run_on_git
 
 on:
   push:
-    branches: 
-      - master
+    branches: [ master ]
 
 jobs:
   build:
