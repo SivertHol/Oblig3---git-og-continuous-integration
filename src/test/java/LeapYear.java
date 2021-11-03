@@ -10,14 +10,14 @@ public class LeapYear {
 
     //Når det er delelig med 4, men ikke 100. 100 fails the test.
     @ParameterizedTest
-    @ValueSource(ints = {40, 80, 120, 160, 240, 320})
+    @ValueSource(ints = {40, 80, 120, 160, 240, 30})
     public void years_dividable_by_four_and_not_100_are_leap_years(int year){
         assertTrue(LeapYearCheck.isLeapYear(year));
     }
 
     //Når det er delelig med 400.
     @ParameterizedTest
-    @ValueSource(ints = {400, 800, 1200, 2000, 2410})
+    @ValueSource(ints = {400, 800, 1200, 2000, 240})
     public void years_dividable_by_400_are_leap_years(int year) {
         assertTrue(LeapYearCheck.isLeapYear(year));
     }
