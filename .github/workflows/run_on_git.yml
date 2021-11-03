@@ -10,7 +10,7 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     permissions:
       contents: read
       packages: write
@@ -22,27 +22,5 @@ jobs:
       with:
         java-version: '11'
         distribution: 'adopt'
-        server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
-        settings-path: ${{ github.workspace }} # location for the settings.xml file
-
-    - name: Build with Maven
-      run: mvn -B package --file pom.xml
-
-    - name: Publish to GitHub Packages Apache Maven
-      run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
-      env:
-        GITHUB_TOKEN: ${{ github.token }}
-
-    - name: Run tests
-      run: |
-       LeapYear.java -r w
-       
-    - name: Send OK notification
-      if: success() &&github.ref == 'refs/heads/main'
-      # uses
-      #with: to: token: args:
-      
-    - name: Send failure notification 
-      if: failure() &&github.ref == 'refs/heads/main'
-      # uses
-      # with: to: token: args:
+        architecure: x64
+        cache: maven
