@@ -27,4 +27,4 @@ jobs:
     
     - name: run tests
       run: |
-        LeapYear.java -r w
+        Oblig3_2/src/test/java/LeapYear.java -r w
