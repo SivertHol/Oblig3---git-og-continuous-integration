@@ -27,4 +27,4 @@ jobs:
     
     - name: run tests
       run: |
-        run LeapYear.java -r w
+        LeapYear.java
