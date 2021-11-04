@@ -1,4 +1,4 @@
-public class LeapYearCheck {
+public class TestLeapYearCheck {
 
     public static boolean isLeapYear(int year) {
 
