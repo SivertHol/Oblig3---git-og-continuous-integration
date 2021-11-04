@@ -29,4 +29,4 @@ jobs:
       run: mvn -B package --file pom.xml verify
 
     - name: TEST
-      run: mvn LeapYear.java -B <plugin-prefix>:<validate>
+      run: mvn validate
