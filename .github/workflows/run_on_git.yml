@@ -31,4 +31,4 @@ jobs:
     - name: TEST
       run: mvn verify
           |
-          LeapYear.java
+          IntelliJ LeapYear.java
