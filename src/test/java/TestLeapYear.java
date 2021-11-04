@@ -6,11 +6,11 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
-public class LeapYear {
+public class TestLeapYear {
 
     //Når det er delelig med 4, men ikke 100. 100 fails the test.
     @ParameterizedTest
-    @ValueSource(ints = {40, 80, 120, 160, 240, 320})
+    @ValueSource(ints = {40, 80, 120, 160, 240})
     public void years_dividable_by_four_and_not_100_are_leap_years(int year){
         assertTrue(LeapYearCheck.isLeapYear(year));
     }
