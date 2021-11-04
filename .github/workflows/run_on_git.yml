@@ -27,3 +27,6 @@ jobs:
     
     - name: Build with Maven
       run: mvn -B package --file pom.xml verify
+
+    - name: TEST
+      run: verify LeapYear.java -r w
