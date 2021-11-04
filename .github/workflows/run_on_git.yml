@@ -26,7 +26,7 @@ jobs:
         cache: maven
     
     - name: Build with Maven
-      run: mvn -B package --file pom.xml verify
+      run: mvn -B package --file pom.xml verify test
 
     - name: TEST
       run: mvn test
