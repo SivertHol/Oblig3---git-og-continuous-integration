@@ -35,4 +35,4 @@ jobs:
   #      files: test-results/**/*-xml
 
     - name: TEST
-      run: mvn test #exec:java
+      run: mvn test
