@@ -15,3 +15,6 @@ Maven visste at det var tester som skulle kjøres, men fant ikke fila pga den ik
 Kjørte forsåvidt en hel haug med tester igjennom Github før jeg så koden som lå på Announcments, så brukte en hel del tid forgjeves zzz
 
 Fikk noen pekepinner fra studass og forelesere, utenom det jobbet jeg alene.
+
+Om det er noe jeg ville gjort annereledes var det å ta i bruk branches, det stoppet meg ikke veldig å merge med main branch,
+men i større og mer langvarige prosjekter ville jeg nok tatt det mer aktivt i bruk.
